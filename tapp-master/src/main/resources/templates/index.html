@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+<meta charset="ISO-8859-1">
+<title>TAPP</title>
+
+	<link th:rel="stylesheet" th:href="@{/webjars/bootstrap/4.6.0-1/css/bootstrap.min.css} "/>
+	<style>
+		.main{
+		width:600px;
+		height:270px;
+		display:inline-table;
+        border:green solid 4px;
+		}
+		 .main a{
+		border:#2E9AFE solid 3px;
+		color:#2E9AFE;
+		font-weight:bolder;
+		}
+.user-profile{
+width:70px;
+}
+	</style>
+</head>
+<body style="background:url('../images/manager.jpg');">
+<!--<img th:src="@{images/manager.jpg}">-->
+	<div class="container-fluid text-center">
+		<div style="background:url('../images/admin.jpg');"  class="main p-3">
+			<h3 class="text-center text-info bg-warning mb-4 p-1"><img class="mr-3 text-center user-profile" th:src="@{images/profile.png}">Welcome to test application (tapp)</h3>
+			<div class="container text-center mt-1">
+				<a class="text-center bg-success text-white p-1"
+					href="http://localhost:8080/users/">Manage Users</a>
+				</div>
+
+			</div>
+
+	</div>
+	<script th:src="@{/webjars/jquery/3.5.1/jquery.min.js}"></script>
+	<script th:src="@{/webjars/popper.js/1.16.0/umd/popper.min.js}"></script>
+	<script th:src="@{/webjars/bootstrap/4.6.0-1/js/bootstrap.min.js}"></script>
+</body>
+</html>

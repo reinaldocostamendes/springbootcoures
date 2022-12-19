@@ -1,0 +1,14 @@
+################################
+         Class Diagram         #
+Users                          #
+-id        : int               #
+-firs_name : String            #
+-last_name : String            #
+-email     : String            #
+-enabled    : boolean          #
+________________________       #
++addOrUpdateUser()             #
++listUsers()                   #
++deleteUser()                  #
+                               #
+################################

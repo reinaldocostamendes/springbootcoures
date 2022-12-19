@@ -1,0 +1,10 @@
+---
+spring:
+  jpa:
+#    show-sql: false
+
+jwt:
+  clientId: glee-o-meter
+  client-secret: secret
+  accessTokenValidititySeconds: 120
+  refreshTokenValiditySeconds: 1000
